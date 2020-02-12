@@ -1,0 +1,141 @@
+* {
+    font-family: "Quicksand";
+}
+
+body {
+    font-size: 16px;
+    background: #eee;
+    color: #666;
+}
+
+
+/* ============ Navbar ============ */
+
+#menuNav {
+    max-width: 600px;
+    box-shadow: 0.5px 0.5px 3px gray;
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+/* ============ END Navbar ============ */
+
+
+/* ============ Workspace Login ============ */
+
+.container-fluid .area-left::after {
+    content: '';
+    background-image: url('../Dist/Background/Artboard_3.png');
+    opacity: 20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.picture-img {
+    margin-top: 100px;
+}
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -70px;
+}
+
+.login-form {
+    margin: auto;
+    width: 370px;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.login-form .form-control {
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #666;
+}
+
+.login-form h1 {
+    color: black;
+}
+
+.login-form a:hover {
+    color: #723dbe;
+}
+
+.forgot-link {
+    font-size: 13px;
+}
+
+.form-control:focus {
+    border-color: #723dbe;
+    box-shadow: 0 0 0 0.2rem rgba(114, 61, 190, .25);
+}
+
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus {
+    background: #54229d;
+    border-color: #54229d;
+    color: #fff;
+}
+
+.btn-custom:focus {
+    box-shadow: 0 0 0 0.2rem rgba(114, 61, 190, .25);
+}
+
+
+/* ================= BOOTSTRAP CAROUSEL  ====================== */
+
+.my-slider .carousel-indicators {
+    top: 10px;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: wheat;
+}
+
+.carousel-indicators li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+/* ============================================================ */
+
+
+/* ============= Footer ================ */
+
+footer.footer-area {
+    padding: 5rem 0;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a>i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
+}

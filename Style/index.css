@@ -1,0 +1,48 @@
+* {
+    font-family: "Quicksand";
+}
+
+
+/* ===================== Navbar ===================== */
+
+#menuNav a img {
+    margin-left: 40px;
+}
+
+#menuNav {
+    box-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.searchBar {
+    margin-left: 120px;
+}
+
+.btn-src1 {
+    border-radius: 100px;
+    border: none;
+    background: none;
+    margin-left: -50px;
+}
+
+
+/* ================================================= */
+
+
+/* ============== Desktop Version ============== */
+
+@media (min-width: 992px) {
+    #menuNav a img {
+        margin-left: 20px;
+    }
+    #menuNav {
+        box-shadow: 0px 1.5px 3px rgba(0, 0, 0, 0.5);
+    }
+    .searchBar {
+        margin-left: 120px;
+    }
+    .btn-src1 {
+        border-radius: 100px;
+        border: none;
+        margin-left: -50px;
+    }
+}

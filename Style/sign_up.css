@@ -1,0 +1,85 @@
+* {
+    font-family: "Quicksand";
+}
+
+#menuNav {
+    max-width: 600px;
+    box-shadow: 0.5px 0.5px 3px gray;
+    border-radius: 0px 0px 20px 0px;
+}
+
+body {
+    font-size: 16px;
+    background: #eee;
+    color: #666;
+}
+
+.main-form {
+    width: 450px;
+    margin-top: 100px;
+    margin-left: -90px;
+    float: left;
+}
+
+.working-area h1 {
+    font: 'Quicsand';
+    color: black;
+}
+
+.working-area h1 b {
+    font-weight: 900;
+}
+
+.btn-custom {
+    margin-top: 20px;
+}
+
+
+/* ================= BOOTSTRAP CAROUSEL  ====================== */
+
+.picture-img {
+    margin-top: 120px;
+}
+
+.my-slider .carousel-indicators {
+    top: 10px;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: wheat;
+}
+
+.carousel-indicators li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+/* ============================================================ */
+
+
+/*=============Footer================*/
+
+footer.footer-area {
+    padding: 5rem 0;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a>i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
+}
