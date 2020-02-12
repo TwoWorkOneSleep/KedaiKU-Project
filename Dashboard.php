@@ -87,7 +87,7 @@
                 <div class="sidebar">
                     <header>My App</header> <!-- Useless -->
                     <ul>
-                        <li><a class="Icon1" href="#"><img src="Dist/Tiny/Dashboard.svg" width="22" height="22" alt="Dashboard" /></a></li>
+                        <li><a class="Icon1" href="?page=user&aksi=view"><img src="Dist/Tiny/Dashboard.svg" width="22" height="22" alt="Dashboard" /></a></li>
                         <li><a class="Icon1" href="#"><img src="Dist/Tiny/Employee.svg" width="28" height="28" alt="Employee" /></a></li>
                         <li><a class="Icon1" href="#"><img src="Dist/Tiny/Gudang.svg" width="28" height="28" alt="Resource" /></a></li>
                         <li><a class="Icon1" href="#"><img src="Dist/Tiny/Graph.svg" width="25" height="25" alt="Graph" /></a></li>
@@ -98,7 +98,22 @@
         <div class="row working-area">
             <div class="col-md-8">
                 <div class="menu-content">
+                    <?php
+                    $page = $_GET['page'];
+                    $aksi = $_GET['aksi'];
 
+                    if ($page == "user") {
+
+                        if ($aksi == "view") {
+                            include "../Content.php"; //isi Projek//
+                        }
+                    } else if ($page == "menu") {
+
+                        if ($aksi == "view") {
+                            include "../Content.php";
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
