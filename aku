@@ -1,0 +1,7 @@
+<?php
+session_start();
+$hiddenDiv = "";
+if ($_SESSION['Nama'] == "Rades") {
+    $hiddenDiv = "style='display:none;'";
+}
+?>
