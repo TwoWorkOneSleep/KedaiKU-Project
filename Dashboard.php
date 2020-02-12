@@ -24,7 +24,7 @@ if ($_SESSION['level'] == '1') {
     <link rel="icon" type="image/png" href="Dist/Tiny/Kedaiku-Icon.png" />
     <link rel="stylesheet" href="Includes/vendor/Magnific-Popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="Style/all.min.css">
-    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/dashboard.css">
     <!-- ====== END ====== -->
     <!--=====  FONTS   ======-->
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet" />
@@ -39,50 +39,81 @@ if ($_SESSION['level'] == '1') {
     <header class="Navbar_area">
         <div class="nav-menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="menuNav">
-                <button type="button" class="btn btn-light" style="border-radius: 50px;">
-                    <img src="Dist/Tiny/List.svg" width="25" height="25" class="d-inline-block align-top" alt="KedaiKU Icon" />
-                </button>
                 <a class="navbar-brand" href="#">
                     <img src="Dist/Tiny/Kedaiku.png" width="150" height="40" class="d-inline-block align-top" alt="KedaiKU Icon" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="Navbar-toogler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <form class="form-inline my-2 my-lg-0 searchBar">
+                    <input class="form-control mr-sm-2 srcCol" type="search" placeholder="Search Data/Employee" aria-label="Search">
+                    <button class="btn btn-white my-2 my-sm-0 btn-icon" type="submit">
+                        <i class="fas fa-circle-notch"></i>
+                    </button>
+                </form>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">
-                                <button type="button" class="btn btn-light" style="border-radius: 50px;">
+                                <button type="button" class="btn btn-light" style="border-radius: 50px;box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);">
                                     <i class="far fa-bell"></i>
                                 </button>
                             </a>
                         </li>
-                        <li class="nav-item" <?php echo $hiddenDiv ?>>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <button type="button" class="btn btn-light" style="border-radius: 50px;">
+                                <button type="button" class="btn btn-light" style="border-radius: 50px;box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);">
                                     <i class="far fa-envelope"></i>
                                 </button>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <h5><?php echo $_SESSION['level'] ?></h5>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="Process/LogOut.php">
-                                <button type="button" class="btn btn-light font-weight-bold" style="border-radius: 50px;">
+                                <button type="button" class="btn btn-light font-weight-bold" style="border-radius: 50px;box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);">
                                     <i class="fas fa-sign-out-alt"></i> LogOut
                                 </button>
                             </a>
                         </li>
-
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" width="40" height="40" class="rounded-circle z-depth-0" alt="avatar image">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-secondary" style="margin-right: -30px;" aria-labelledby="navbarDropdownMenuLink-5">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <!-- =======================================  End Navbar  ================================================= -->
+    <!-- ============================== Content =================================== -->
+    <div class="container">
+        <div class="row working-area">
+            <div class="col-md-2">
+                <div class="sidebar">
+                    <header>My App</header> <!-- Useless -->
+                    <ul>
+                        <li><a class="Icon1" href="#"><img src="Dist/Tiny/Dashboard.svg" width="22" height="22" alt="Dashboard" /></a></li>
+                        <li><a class="Icon1" href="#"><img src="Dist/Tiny/Employee.svg" width="28" height="28" alt="Employee" /></a></li>
+                        <li><a class="Icon1" href="#"><img src="Dist/Tiny/Gudang.svg" width="28" height="28" alt="Resource" /></a></li>
+                        <li><a class="Icon1" href="#"><img src="Dist/Tiny/Graph.svg" width="25" height="25" alt="Graph" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row working-area">
+            <div class="col-md-8">
+                <div class="menu-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== ======= =================================== -->
     <!-- ============================== Custom Javacsript  =================================== -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
