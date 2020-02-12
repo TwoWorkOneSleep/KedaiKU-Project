@@ -1,13 +1,3 @@
-<?php
-session_start();
-$hiddenDiv = "";
-if ($_SESSION['level'] == '1') {
-    $hiddenDiv = "style='display: none;'";
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -128,6 +118,11 @@ if ($_SESSION['level'] == '1') {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.dropdown-toggle').click(function() {
+            $(this).next('.dropdown-menu').slideToggle(500);
+        });
+    </script>
 </body>
 
 </html>
